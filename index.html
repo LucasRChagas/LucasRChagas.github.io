@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucas Renan Chagas | Portfólio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2922/2922522.png" type="image/png" />
+  <meta name="description" content="Portfólio profissional de Lucas Renan Chagas - Desenvolvedor Fullstack e especialista em Segurança da Informação.">
+  <meta property="og:title" content="Lucas Renan Chagas | Portfólio Profissional">
+  <meta property="og:description" content="Veja meus projetos, experiência em TI e formas de contato.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549924231-f129b911e442?fit=crop&w=800&q=80">
+  <meta property="og:url" content="https://seu-site-aqui.com">
+  <!-- CSS e JS permanecem os mesmos da estrutura anterior -->
+
+  <style>
+    :root {
+      --primary-bg: #0f0f0f;
+      --secondary-bg: #1a1a1a;
+      --accent: #c7a008;
+      --text-color: #e0e0e0;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: var(--font-main);
+      background-color: var(--primary-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--secondary-bg);
+      color: var(--accent);
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    nav {
+      background-color: #111;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: var(--accent);
+      width: 0%;
+      z-index: 1001;
+    }
+    .theme-toggle {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      background: var(--secondary-bg);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1002;
+      font-size: 1rem;
+    }
+    .theme-menu {
+      display: none;
+      position: fixed;
+      bottom: 3.5rem;
+      left: 1rem;
+      background: var(--secondary-bg);
+      border: 1px solid var(--accent);
+      padding: 0.5rem;
+      border-radius: 5px;
+      z-index: 1002;
+      color: var(--text-color);
+    }
+    .theme-menu div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0;
+      cursor: pointer;
+    }
+    .theme-menu div:hover {
+      color: white;
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: var(--secondary-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      background-color: #0a0a0a;
+      color: #666;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <header>
+    <h1>Lucas Renan Chagas</h1>
+    <p>Desenvolvedor Fullstack | Segurança da Informação</p>
+    <a href="CV_LUCAS_2025.pdf" download style="color: var(--accent); text-decoration: underline; font-weight: bold; display: inline-block; margin-top: 1rem;">Baixar Currículo (PDF)</a>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Profissional de tecnologia com atuação fullstack e foco em segurança da informação. Trabalho com desenvolvimento limpo, robusto e seguro. Meu compromisso é com a excelência técnica e a entrega precisa, com atenção aos detalhes.</p>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+      <div style="width: 280px; background-color: var(--secondary-bg); border-radius: 10px; padding: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.6);">
+        <img src="imagens/todo_list_3_imgs.png" alt="To-do List JS" style="width: 100%; border-radius: 5px;">
+        <h3 style="margin-top: 1rem; color: var(--accent);">To-do List JS</h3>
+        <p>Aplicação simples de lista de tarefas usando HTML, CSS e JavaScript puro.</p>
+        <a href="projetos/todo_list_profissional.zip" download style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 4px; text-decoration: none;">Baixar</a>
+      </div>
+
+      <div style="width: 280px; background-color: var(--secondary-bg); border-radius: 10px; padding: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.6);">
+        <img src="imagens/api_flask_3_imgs.png" alt="API Flask Tarefas" style="width: 100%; border-radius: 5px;">
+        <h3 style="margin-top: 1rem; color: var(--accent);">API Flask Tarefas</h3>
+        <p>API REST básica em Flask com rotas para CRUD de tarefas.</p>
+        <a href="projetos/api_flask_profissional.zip" download style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 4px; text-decoration: none;">Baixar</a>
+      </div>
+
+      <div style="width: 280px; background-color: var(--secondary-bg); border-radius: 10px; padding: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.6);">
+        <img src="imagens/conversor_moedas_3_imgs.png" alt="Conversor de Moedas" style="width: 100%; border-radius: 5px;">
+        <h3 style="margin-top: 1rem; color: var(--accent);">Conversor de Moedas</h3>
+        <p>Conversor de moedas com API pública usando fetch e JavaScript.</p>
+        <a href="projetos/conversor_moedas_profissional.zip" download style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 4px; text-decoration: none;">Baixar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: lucas@email.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/lucasrenanchagas" style="color: var(--accent); text-decoration: underline;">linkedin.com/in/lucasrenanchagas</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lucas Renan Chagas — Portfólio Profissional</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+
+      const progress = document.createElement('div');
+      progress.className = 'scroll-progress';
+      document.body.appendChild(progress);
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progressWidth = (scrollTop / docHeight) * 100;
+        progress.style.width = progressWidth + '%';
+      });
+
+      const toggle = document.createElement('button');
+      toggle.className = 'theme-toggle';
+      toggle.textContent = 'Alterar Tema';
+
+      const menu = document.createElement('div');
+      menu.className = 'theme-menu';
+      menu.innerHTML = `
+        <div id="dark-mode">🌙 Escuro</div>
+        <div id="light-mode">☀️ Claro</div>
+      `;
+
+      toggle.onclick = () => {
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      };
+
+      menu.querySelector('#dark-mode').onclick = () => {
+        document.body.classList.remove('light-mode');
+        document.documentElement.style.setProperty('--primary-bg', '#0f0f0f');
+        document.documentElement.style.setProperty('--secondary-bg', '#1a1a1a');
+        document.documentElement.style.setProperty('--text-color', '#e0e0e0');
+        menu.style.display = 'none';
+      };
+
+      menu.querySelector('#light-mode').onclick = () => {
+        document.body.classList.add('light-mode');
+        document.documentElement.style.setProperty('--primary-bg', '#ffffff');
+        document.documentElement.style.setProperty('--secondary-bg', '#f2f2f2');
+        document.documentElement.style.setProperty('--text-color', '#111111');
+        menu.style.display = 'none';
+      };
+
+      document.body.appendChild(toggle);
+      document.body.appendChild(menu);
+    });
+  </script>
+
+</body>
+</html>
